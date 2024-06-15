@@ -11,6 +11,7 @@
       "source": [
         "src/calameo_frontend/dist"
       ],
+      "candid": "src/calameo_frontend/calameo_frontend.did",
       "type": "assets",
       "workspace": "calameo_frontend"
     }
@@ -19,6 +20,18 @@
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "providers": [
+        "https://ic0.app"
+      ],
+      "type": "persistent"
     }
   },
   "output_env_file": ".env",

@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "calameo_backend": {
+      "main": "src/calameo_backend/main.mo",
+      "type": "motoko"
+    },
+    "calameo_frontend": {
+      "dependencies": [
+        "calameo_backend"
+      ],
+      "source": [
+        "src/calameo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "calameo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
